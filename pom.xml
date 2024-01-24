@@ -60,7 +60,7 @@
 				  </descriptorRefs>
 				  <archive>
 					  <manifest>
-						  <mainClass>testing.php_registration_test_cases.App</mainClass>
+						  <mainClass>org.testing.php_web_app.App</mainClass>
 					  </manifest>
 				  </archive>
 			  </configuration>

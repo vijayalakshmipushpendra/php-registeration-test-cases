@@ -23,7 +23,7 @@ public class App
         ChromeOptions chromeoptions = new ChromeOptions();
        // chromeoptions.addArguments("--headless");
         ChromeDriver driver = new ChromeDriver(chromeoptions);
-        driver.get("http://13.200.237.238:8085/register.html");
+        driver.get("http://3.109.202.40:8085/register.html");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.id("username")).sendKeys("admin");
         Thread.sleep(2000);
