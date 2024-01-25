@@ -26,8 +26,7 @@ public class App
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeoptions = new ChromeOptions();
        
-        //ChromeOptions chromeoptions = new ChromeOptions();
-       // chromeoptions.addArguments("--headless");
+        chromeoptions.addArguments("--headless");
         ChromeDriver driver = new ChromeDriver(chromeoptions);
         driver.get("http://3.109.202.40:8085/register.html");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -38,8 +37,8 @@ public class App
         driver.findElement(By.id("email")).sendKeys("admin@admin.com");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[@type='submit']")).click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		System.out.println("Test Scripts Ended");
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	System.out.println("Test Scripts Ended");
           
     }
 }
