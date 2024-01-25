@@ -4,6 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,9 +20,11 @@ public class App
     {
         System.out.println( "Hello World!" );
       //System.setProperty("webdriver.chrome.driver","D:\\Software\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+       // WebDriverManager.chromedriver().setup();
         WebDriverManager.chromedriver().setup();
-       
         ChromeOptions chromeoptions = new ChromeOptions();
+       
+        //ChromeOptions chromeoptions = new ChromeOptions();
        // chromeoptions.addArguments("--headless");
         ChromeDriver driver = new ChromeDriver(chromeoptions);
         driver.get("http://3.109.202.40:8085/register.html");
