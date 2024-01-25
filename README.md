@@ -1,6 +1,5 @@
 This repository exclusively houses the test-scripts for the PHP registration form application. 
 The actual PHP registration form application resides in a separate repository, which can be accessed through the following link: "https://github.com/vijayalakshmipushpendra/php-registration.git"
-
 Selenium has been employed for automation testing in this project.
 Please ensure to update the application link within the test scripts to reflect the current location.
 
