@@ -19,9 +19,10 @@ public class App
     public static void main( String[] args ) throws InterruptedException
     {
         System.out.println( "Hello World!" );
-      System.setProperty("webdriver.chrome.driver","D:\\Software\\chromedriver-win64 (2)\\chromedriver-win64\\chromedriver.exe");
-     // D:\Software\chromedriver-win64 (2)\chromedriver-win64
+      //System.setProperty("webdriver.chrome.driver","D:\\Software\\chromedriver-win64 (2)\\chromedriver-win64\\chromedriver.exe");
+     
        // WebDriverManager.chromedriver().setup();
+	    
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeoptions = new ChromeOptions();
        
